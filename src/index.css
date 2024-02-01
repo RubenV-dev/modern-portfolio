@@ -5,9 +5,342 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
+  overflow: auto;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main-container {
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  width: 100%;
+  font-size: 2rem;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+#period {
+  color: red;
+}
+
+.nav-routes {
+  display:flex;
+  margin: 0em;
+  justify-content: space-evenly
+}
+
+.nav li {
+  padding-right: 10%;
+  list-style: none;
+}
+
+.nav a:hover{
+  transition : all 0.4s linear;
+  color:gold;
+}
+
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.home-left-split {
+  background-color: black;
+  width: 50%;
+  height: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#home-intro {
+  margin-top: 10rem;
+}
+
+.home-right-split {
+  width: 50%;
+  box-sizing: border-box
+}
+
+#first-name {
+  font-size: 6rem;
+  margin-bottom: .5rem;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+#last-name {
+  font-size: 6rem;
+  margin-top: .5rem;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+#hello-button {
+  background-color: red;
+  border-radius: 15px;
+  width: 40%;
+  font-family: Copperplate, Papyrus, fantasy;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#hello-button a {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hello-button:hover {
+  transform: scale(1.1);
+  transition : all 0.4s linear;
+}
+
+.profile-pic {
+  display:flex;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+}
+
+#sml-profile-pic {
+  border-radius: 50%;
+  display: none;
+}
+
+.about {
+  padding-top: .1%;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: black;
+  font-size: 2rem;
+}
+.about p {
+  text-align: center;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 3vw;
+  margin-bottom: 0px;
+}
+
+.icon-links {
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: .25%;
+  margin-top: .25%;
+  padding-top: 3%;
+  padding-left: 0px;
+}
+
+.icon-links li {
+  list-style:none;
+}
+
+.icon-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.icon-links li a:hover{
+  transition : all 0.4s linear;
+  color:gold;
+}
+
+.skills {
+  display:flex;
+  justify-content: space-evenly;
+  /* padding-top: 1%; */
+  box-sizing: border-box;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: Copperplate, Papyrus, fantasy;
+  position: absolute;
+  bottom: 0; 
+  left: 0; 
+  width: 50%;
+  z-index: 10;
+}
+
+.skills li {
+  list-style: none;
+}
+
+.contacts {
+  background: black;
+  text-align: center;
+}
+.contacts h2 {
+  text-align: center;
+}
+.contacts a {
+  color:white;
+  text-decoration: none;
+  transition : all 0.4s linear;
+}
+
+.contacts a:hover {
+  transform: scale(1.1);
+  color: blue;
+}
+
+.description {
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+  max-height:inherit;
+  box-sizing: border-box;
+  padding-bottom: 1%;
+}
+
+.projects {
+  height: 100%;
+  width: 100%;
+  color:black;
+  display:flex;
+  flex-direction: column;
+  background-color: lightblue;
+}
+
+.projects a {
+  color: black;
+}
+
+.projects a:hover {
+  transform: scale(1.1);
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 3vw;
+  margin-bottom: 0px;
+}
+
+.proj-1, .proj-2 {
+  height: 40%;
+  width: 100%;
+  display: flex;
+}
+
+.proj-1 {
+  padding-bottom: 3%;
+}
+
+.proj-des {
+  width: 49%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.proj-des a {
+  padding-left: 15px;
+  padding-right: 15px
+}
+
+.proj-des a:hover {
+  background: rgb(0, 0, 221);
+  color:white;
+  transition : all 0.4s linear;
+  border: 1px solid white;
+  text-decoration: none;
+}
+
+.proj-visual {
+  width: 49%;
+  display: inline-block;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.proj-visual-small {
+  display: none;
+}
+
+@media screen and (max-width: 830px) { 
+  .profile-pic { 
+    display: none; 
+  } 
+  .home-right-split {
+    display: none;
+  }
+
+  .home-left-split {
+    width: 100%;
+  }
+
+  .nav {
+    font-size: 1rem;
+  }
+
+  #first-name, #last-name {
+    font-size: 3rem;
+  }
+
+  #sml-profile-pic {
+    display: inline;
+    width: 180px;
+    height: 180px;
+  }
+
+  .proj-des {
+    font-size: .7rem;
+    width: 100%;
+  }
+
+  .proj-visual {
+    display: none;
+  }
+
+  .proj-visual-small {
+    display: block;
+    padding-top: 5%;
+  }
+
+  .about {
+    font-size: 1.3rem;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  #home-intro {
+    margin-top: 1rem;
+  }
 }
