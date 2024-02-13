@@ -10,23 +10,23 @@ export default class Projects extends React.Component {
         <div className="projects">
         <div className="proj-1">
             <div className="proj-des">
-            <h3>Intake</h3>
-            <p>
-                Nutrition tracker app with bmi calculator, food diary, workout suggestion feature and visual data analysis. 
-                Users are allowed to log in or create a new profile and add foods to their profiles that correspond to the 
-                foods they ate that day. Users will then be able to see total caloric, protein, carb and fat intake from the meals entered.
-                Useful to keep track of this info when you are trying to reach your fitness goals.
-            </p>
-            <p>Built with React, Redux, Hooks, React-vis, Ruby on Rails, Custom CSS. </p>
-            <a href="https://github.com/RubenV-dev/intake-front-end">
-                Github Front - End
-            </a>
-            <a href="https://github.com/RubenV-dev/intake-back-end">
-                Github Back - End
-            </a>
-            <a href="https://www.youtube.com/watch?v=xaSPlHhiK6s">
-                Demo
-            </a>
+                <h3>Intake</h3>
+                <p>
+                    Nutrition tracker app with bmi calculator, food diary, workout suggestion feature and visual data analysis. 
+                    Users are allowed to log in or create a new profile and add foods to their profiles that correspond to the 
+                    foods they ate that day. Users will then be able to see total caloric, protein, carb and fat intake from the meals entered.
+                    Useful to keep track of this info when you are trying to reach your fitness goals.
+                </p>
+                <p>Built with React, Redux, Hooks, React-vis, Ruby on Rails, Custom CSS. </p>
+                <a href="https://github.com/RubenV-dev/intake-front-end">
+                    Github Front - End
+                </a>
+                <a href="https://github.com/RubenV-dev/intake-back-end">
+                    Github Back - End
+                </a>
+                <a href="https://www.youtube.com/watch?v=xaSPlHhiK6s">
+                    Demo
+                </a>
             <div className="proj-visual-small">
                 <Iframe url="https://www.youtube.com/embed/xaSPlHhiK6s?rel=0"
                     width="100%"

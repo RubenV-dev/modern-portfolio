@@ -8,7 +8,7 @@ export default class Icon extends React.Component {
         <>
         <Nav/>
         <div className="contacts">
-            <p>Feel free to reach out with any work opportunities</p>
+            <p>Open to discussing any work opportunities:</p>
             <p>
                 <a href="mailto:RubenVallejo101@gmail.com" 
                 target="_blank" 

@@ -4,7 +4,6 @@ import React from 'react';
 // import Projects from './components/projects'
 // import Home from './components/home'
 import { Outlet } from "react-router-dom";
-import Nav from "./components/nav"
 
 export default class MainContainer extends React.Component {
   render() {

@@ -5,7 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-image: url(https://i.imgur.com/qgPbb4N.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   overflow: auto;
   height: 100%;
@@ -32,8 +34,8 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 5%;
-  padding-bottom: 3%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   width: 100%;
   font-size: 2rem;
   font-family: Copperplate, Papyrus, fantasy;
@@ -72,33 +74,37 @@ code {
 }
 
 .home-left-split {
-  background-color: black;
   width: 50%;
   height: 100%;
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 5%;
   box-sizing: border-box;
   text-align: center;
+  overflow-y: hidden;
 }
 
 #home-intro {
-  margin-top: 10rem;
+  margin-top: 4rem;
 }
 
 .home-right-split {
   width: 50%;
-  box-sizing: border-box
+  box-sizing: border-box;
+  height: 100%;
 }
 
 #first-name {
   font-size: 6rem;
   margin-bottom: .5rem;
+  margin-top: 2rem;
   font-family: Copperplate, Papyrus, fantasy;
 }
 
 #last-name {
   font-size: 6rem;
   margin-top: .5rem;
+  margin-bottom: 1rem;
   font-family: Copperplate, Papyrus, fantasy;
 }
 
@@ -135,7 +141,7 @@ code {
   width: 100%;
 }
 
-#sml-profile-pic {
+.sml-profile-pic {
   border-radius: 50%;
   display: none;
 }
@@ -144,9 +150,9 @@ code {
   padding-top: .1%;
   box-sizing: border-box;
   height: 100%;
-  background-color: black;
   font-size: 2rem;
 }
+
 .about p {
   text-align: center;
 }
@@ -184,15 +190,14 @@ code {
 .skills {
   display:flex;
   justify-content: space-evenly;
-  /* padding-top: 1%; */
   box-sizing: border-box;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   font-family: Copperplate, Papyrus, fantasy;
-  position: absolute;
-  bottom: 0; 
-  left: 0; 
   width: 50%;
+  position: absolute;
+  bottom: 20px; 
+  left: 0; 
   z-index: 10;
 }
 
@@ -201,8 +206,8 @@ code {
 }
 
 .contacts {
-  background: black;
   text-align: center;
+  font-size: 2rem;
 }
 .contacts h2 {
   text-align: center;
@@ -230,14 +235,14 @@ code {
 .projects {
   height: 100%;
   width: 100%;
-  color:black;
   display:flex;
   flex-direction: column;
-  background-color: lightblue;
+  padding-top: 1rem;
+  box-sizing: border-box;
 }
 
 .projects a {
-  color: black;
+  color: white;
 }
 
 .projects a:hover {
@@ -254,6 +259,7 @@ code {
   height: 40%;
   width: 100%;
   display: flex;
+  box-sizing: border-box;
 }
 
 .proj-1 {
@@ -261,16 +267,16 @@ code {
 }
 
 .proj-des {
-  width: 49%;
-  padding-left: 10%;
-  padding-right: 10%;
+  width: 50%;
+  padding-left: 4rem;
+  padding-right: 4rem;
   display: inline-block;
   font-size: 1rem;
+  box-sizing:border-box;
 }
 
 .proj-des a {
-  padding-left: 15px;
-  padding-right: 15px
+  padding-right: 1rem;
 }
 
 .proj-des a:hover {
@@ -282,17 +288,17 @@ code {
 }
 
 .proj-visual {
-  width: 49%;
+  width: 50%;
   display: inline-block;
-  padding-left: 10%;
-  padding-right: 10%;
+  box-sizing:border-box;
+  padding-right: 4rem;
 }
 
 .proj-visual-small {
   display: none;
 }
 
-@media screen and (max-width: 830px) { 
+@media screen and (max-width: 519px) {
   .profile-pic { 
     display: none; 
   } 
@@ -305,14 +311,14 @@ code {
   }
 
   .nav {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   #first-name, #last-name {
     font-size: 3rem;
   }
 
-  #sml-profile-pic {
+  .sml-profile-pic {
     display: inline;
     width: 180px;
     height: 180px;
@@ -321,6 +327,9 @@ code {
   .proj-des {
     font-size: .7rem;
     width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: inline-block;
   }
 
   .proj-visual {
@@ -336,11 +345,115 @@ code {
     font-size: 1.3rem;
   }
 
+  .contacts {
+    font-size: 1.3rem;
+  }
+
   .skills {
     width: 100%;
   }
 
   #home-intro {
     margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .skills {
+    bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 520px) and (max-width: 1120px) { 
+  .profile-pic { 
+    display: none; 
+  } 
+  .home-right-split {
+    display: none;
+  }
+
+  .home-left-split {
+    width: 100%;
+  }
+
+  #first-name, #last-name {
+    font-size: 3rem;
+  }
+
+  .sml-profile-pic {
+    display: inline;
+    width: 180px;
+    height: 180px;
+  }
+
+  .proj-des {
+    font-size: .7rem;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: inline-block;
+  }
+
+  .proj-visual {
+    display: none;
+  }
+
+  .proj-visual-small {
+    display: block;
+    padding-top: 5%;
+  }
+
+  .about {
+    font-size: 1.3rem;
+  }
+
+  .contacts {
+    font-size: 1.3rem;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
+  #home-intro {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .proj-des {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-height: 649px){
+  .skills {
+    display: none;
+  }
+}
+
+@media screen and (min-height: 650px) and (max-height: 698px) {
+  .icon-links {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+
+  #first-name {
+    margin-top: .5rem
+  }
+}
+
+@media screen and (min-height: 700px) and (max-height: 850px) {
+  #first-name {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-height: 851px) {
+  #first-name {
+    margin-top: 6rem;
+  }
+
+  #home-intro {
+    font-size: 2rem;
   }
 }
