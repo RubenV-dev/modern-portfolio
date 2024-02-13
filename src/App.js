@@ -9,10 +9,8 @@ import Home from './components/home'
 
 function App() {
   return (
-    // <div>
-    // <h1>Placeholder App h1 tag</h1>
     <Routes>
-      <Route path="/" element={<MainContainer />}>
+      <Route path="/modern-portfolio" element={<MainContainer />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About/>} />
         <Route path="projects" element={<Projects/>} />
