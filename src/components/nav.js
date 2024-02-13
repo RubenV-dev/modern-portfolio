@@ -7,19 +7,19 @@ export default class Nav extends React.Component {
     return (
         <>
         <nav className="nav">
-            <Link to="/" className="nav-name-initials">
+            <Link to="/modern-portfolio" className="nav-name-initials">
                 <span>RV</span>
                 <span id="period">.</span>
             </Link>
             <ul className="nav-routes">
                 <li>
-                    <Link to="/projects">Work</Link>
+                    <Link to="/modern-portfolio/projects">Work</Link>
                 </li>
                 <li>
-                    <Link to="/about">Story</Link>
+                    <Link to="/modern-portfolio/about">Story</Link>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/modern-portfolio/contact">Contact</Link>
                 </li>
             </ul>
         </nav>
