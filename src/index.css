@@ -28,6 +28,7 @@ code {
 
 .main-container {
   height: 100%;
+  overflow-y: auto;
 }
 
 .nav {
@@ -39,7 +40,6 @@ code {
   width: 100%;
   font-size: 2rem;
   font-family: Copperplate, Papyrus, fantasy;
-  /* height: 30px; */
 
 }
 
@@ -158,7 +158,6 @@ code {
 
 .about p {
   text-align: center;
-  /* overflow-y: auto; */
 }
 
 .about h2 {
