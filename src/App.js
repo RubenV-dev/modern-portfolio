@@ -10,11 +10,11 @@ import Home from './components/home'
 function App() {
   return (
     <Routes>
-      <Route path="/modern-portfolio" element={<MainContainer />}>
+      <Route path="/" element={<MainContainer />}>
         <Route index element={<Home />} />
-        <Route path="/modern-portfolio/about" element={<About/>} />
-        <Route path="/modern-portfolio/projects" element={<Projects/>} />
-        <Route path="/modern-portfolio/contact" element={<Contact/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/projects" element={<Projects/>} />
+        <Route path="/contact" element={<Contact/>} />
         <Route path="*" element={<NoPage />} />
       </Route>
     </Routes>
