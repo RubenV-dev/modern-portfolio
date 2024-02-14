@@ -1,5 +1,4 @@
 import React from 'react';
-// import { FiMail, FiPhone } from 'react-icons/fi'
 import Nav from './nav'
 import { IoLogoJavascript } from 'react-icons/io'
 import { DiRuby } from 'react-icons/di'
@@ -11,16 +10,17 @@ import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineMedium } from 'react-ic
 
 export default class Home extends React.Component {
   render() {
+    const croppedImgUrl = "https://i.imgur.com/tdtckpO.jpeg"
     const profileImgUrl = "https://i.imgur.com/IufJfiJ.jpg"
     return (
         <div className="home-page">
             <div className="home-left-split">
                 <Nav />
                 <h2 id="first-name">Ruben</h2>
-                <h2 id="last-name"> Vallejo.</h2>
+                <h2 id="last-name"> Vallejo</h2>
                 <img 
                 className="sml-profile-pic" 
-                src={profileImgUrl}
+                src={croppedImgUrl}
                 alt="profile pic"
                 referrerPolicy="no-referrer"    
                 />
@@ -37,25 +37,29 @@ export default class Home extends React.Component {
                     </li>
                     <li>
                         <a href="https://www.instagram.com/ruben_will/"
-                        target="_blank" >
+                        target="_blank"
+                        rel="noopener noreferrer" >
                             <AiOutlineInstagram size="2rem"/>
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/RubenV-dev"
-                        target="_blank" >
+                        target="_blank"
+                        rel="noopener noreferrer" >
                             <FiGithub size="2rem" />
                         </a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/ruben-vallejo-a5317baa/"
-                        target="_blank" >
+                        target="_blank"
+                        rel="noopener noreferrer" >
                             <AiOutlineLinkedin size="2rem"/>
                         </a>
                     </li>
                     <li>
                         <a href="https://medium.com/@rv.results"
-                        target="_blank" >
+                        target="_blank"
+                        rel="noopener noreferrer" >
                             <AiOutlineMedium size="2rem"/>
                         </a>
                     </li>

@@ -81,7 +81,7 @@ code {
   padding-bottom: 5%;
   box-sizing: border-box;
   text-align: center;
-  overflow-y: hidden;
+  overflow-y: auto
 }
 
 #home-intro {
@@ -239,6 +239,7 @@ code {
   flex-direction: column;
   padding-top: 1rem;
   box-sizing: border-box;
+  overflow-y: auto
 }
 
 .projects a {
@@ -256,7 +257,7 @@ code {
 }
 
 .proj-1, .proj-2 {
-  height: 40%;
+  /* height: 40%; */
   width: 100%;
   display: flex;
   box-sizing: border-box;
