@@ -6,7 +6,7 @@ import { FaReact } from 'react-icons/fa'
 import { DiPostgresql } from 'react-icons/di'
 import { AiOutlineHtml5 } from 'react-icons/ai'
 import { FiGithub } from 'react-icons/fi'
-import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineMedium } from 'react-icons/ai'
+import { AiOutlineLinkedin, AiOutlineMedium } from 'react-icons/ai'
 
 export default class Home extends React.Component {
   render() {
@@ -28,20 +28,6 @@ export default class Home extends React.Component {
                     in New York City. 
                 </p>
                 <ul className="icon-links">
-                    <li id="hello-button"> 
-                        <a href="mailto:RubenVallejo101@gmail.com" 
-                        target="_blank" 
-                        rel="noopener noreferrer">
-                            Say Hello
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/ruben_will/"
-                        target="_blank"
-                        rel="noopener noreferrer" >
-                            <AiOutlineInstagram size="2rem"/>
-                        </a>
-                    </li>
                     <li>
                         <a href="https://github.com/RubenV-dev"
                         target="_blank"
