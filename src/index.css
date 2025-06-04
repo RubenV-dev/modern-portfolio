@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url(https://i.imgur.com/qgPbb4N.jpeg);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
   color: white;
   overflow: auto;
@@ -27,7 +27,7 @@ code {
 }
 
 .main-container {
-  height: 100%;
+  /* height: 100%; */
   overflow-y: auto;
 }
 
@@ -35,12 +35,13 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  /* for smaller screen sizes need to find a replacment, that would fix the scroll sideways bug */
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   width: 100%;
+  /* width 100 causing scrolling on mobile... if you change it messes up the larger page...*/
   font-size: 2rem;
   font-family: Copperplate, Papyrus, fantasy;
-
 }
 
 .nav a {
@@ -80,7 +81,7 @@ code {
   height: 100%;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 5%;
+  /* padding-bottom: 5%; */
   box-sizing: border-box;
   text-align: center;
   overflow-y: auto;
@@ -94,7 +95,6 @@ code {
 .home-right-split {
   width: 50%;
   box-sizing: border-box;
-  height: 100%;
 }
 
 #first-name {
@@ -172,8 +172,9 @@ code {
   flex-wrap: wrap;
   margin-bottom: .25%;
   margin-top: .25%;
-  padding-top: 3%;
+  padding-top: 4%;
   padding-left: 0px;
+  padding-bottom: 4%;
 }
 
 .icon-links li {
@@ -197,11 +198,7 @@ code {
   padding-left: 5%;
   padding-right: 5%;
   font-family: Copperplate, Papyrus, fantasy;
-  width: 50%;
-  position: absolute;
-  bottom: 20px; 
   left: 0; 
-  z-index: 10;
 }
 
 .skills li {
