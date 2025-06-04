@@ -10,12 +10,12 @@ import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineMedium } from 'react-ic
 
 export default class Home extends React.Component {
   render() {
-    const croppedImgUrl = "https://i.imgur.com/tdtckpO.jpeg"
-    const profileImgUrl = "https://i.imgur.com/IufJfiJ.jpg"
+    const croppedImgUrl = "https://i.imgur.com/d62ZeTH.png"
+    const profileImgUrl = "https://i.imgur.com/d62ZeTH.png"
     return (
         <div className="home-page">
+            <Nav />
             <div className="home-left-split">
-                <Nav />
                 <h2 id="first-name">Ruben</h2>
                 <h2 id="last-name"> Vallejo</h2>
                 <img 
