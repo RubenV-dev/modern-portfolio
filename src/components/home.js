@@ -1,17 +1,18 @@
 import React from 'react';
 import Nav from './nav'
 import { IoLogoJavascript } from 'react-icons/io'
-import { DiRuby } from 'react-icons/di'
+import { DiRuby, DiPostgresql } from 'react-icons/di'
 import { FaReact } from 'react-icons/fa'
-import { DiPostgresql } from 'react-icons/di'
-import { AiOutlineHtml5 } from 'react-icons/ai'
 import { FiGithub } from 'react-icons/fi'
-import { AiOutlineLinkedin, AiOutlineMedium } from 'react-icons/ai'
+import { AiOutlineLinkedin, AiOutlineMedium, AiOutlineJava, AiOutlineKubernetes } from 'react-icons/ai'
+import { TbBrandTypescript } from 'react-icons/tb'
+import { SiMysql, SiRubyonrails } from "react-icons/si"
+import { BiLogoSpringBoot } from "react-icons/bi"
 
 export default class Home extends React.Component {
   render() {
-    const croppedImgUrl = "https://i.imgur.com/d62ZeTH.png"
-    const profileImgUrl = "https://i.imgur.com/d62ZeTH.png"
+    const profileImgUrl = "https://i.imgur.com/dOIUmth.jpeg"
+    const croppedProfileImgUrl = "https://i.imgur.com/cl4M6ge.jpeg"
     return (
         <div className="home-page">
             <Nav />
@@ -20,7 +21,7 @@ export default class Home extends React.Component {
                 <h2 id="last-name"> Vallejo</h2>
                 <img 
                 className="sml-profile-pic" 
-                src={croppedImgUrl}
+                src={profileImgUrl}
                 alt="profile pic"
                 referrerPolicy="no-referrer"    
                 />
@@ -52,31 +53,52 @@ export default class Home extends React.Component {
                 </ul>
                 <ul className="skills">
                     <li>
+                        <IoLogoJavascript size="4.2rem"/>
+                        <p>Javascript</p>
+                    </li>
+                    <li>
+                        <TbBrandTypescript size="4.2rem"/>
+                        <p>Typescript</p>
+                    </li>
+                    <li>
                         <DiRuby size="4.2rem"/>
                         <p>Ruby</p>
                     </li>
                     <li>
-                        <IoLogoJavascript size="4.2rem"/>
-                        <p>Javascript</p>
+                        <AiOutlineJava size="4.2rem"/>
+                        <p>Java</p>
                     </li>
                     <li>
                         <FaReact size="4.2rem"/>
                         <p>React</p>
                     </li>
                     <li>
-                        <AiOutlineHtml5 size="4.2rem"/>
-                        <p>HTML5</p>
+                        <AiOutlineKubernetes size="4.2rem" />
+                        <p>Kubernetes</p>
+                    </li>
+                    <li>
+                        <SiRubyonrails size="4.2rem"/>
+                        <p>Ruby on Rails</p>
+                    </li>
+                    <li>
+                        <BiLogoSpringBoot size="4.2rem"/>
+                        <p>SpringBoot</p>
+                    </li>
+                    <li>
+                        <SiMysql size="4.2rem"/>
+                        <p>MySql</p>
                     </li>
                     <li>
                         <DiPostgresql size="4.2rem"/>
                         <p>PostgreSQL</p>
                     </li>
+                    
                 </ul>
             </div>
             <div className="home-right-split">
                 <img 
                 className="profile-pic" 
-                src={profileImgUrl}
+                src={croppedProfileImgUrl}
                 alt="profile pic"
                 referrerPolicy="no-referrer"    
                 />

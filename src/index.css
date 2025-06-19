@@ -204,6 +204,7 @@ code {
 .skills {
   display:flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   box-sizing: border-box;
   padding-left: 5%;
   padding-right: 5%;
@@ -213,6 +214,9 @@ code {
 
 .skills li {
   list-style: none;
+  flex-basis: calc(100% / 5);
+  flex-grow: 0; /* Or 1, depending on desired behavior */
+  flex-shrink: 0;
 }
 
 .contacts {
