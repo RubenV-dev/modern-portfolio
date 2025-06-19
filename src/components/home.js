@@ -69,12 +69,12 @@ export default class Home extends React.Component {
                         <p>Java</p>
                     </li>
                     <li>
-                        <FaReact size="4.2rem"/>
-                        <p>React</p>
-                    </li>
-                    <li>
                         <AiOutlineKubernetes size="4.2rem" />
                         <p>Kubernetes</p>
+                    </li>
+                    <li>
+                        <FaReact size="4.2rem"/>
+                        <p>React</p>
                     </li>
                     <li>
                         <SiRubyonrails size="4.2rem"/>

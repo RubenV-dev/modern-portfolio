@@ -24,12 +24,15 @@ export default class About extends React.Component {
             </p>
 
             <ul>
-              <li>Experienced Languages: Javascript, Typescript, Java and Ruby.</li>
+              <li>
+                <span style={{color: "red"}}>Experienced Languages</span>: Javascript, Typescript, Java, Ruby</li>
 
-              <li>Experienced Frameworks: Rails, React, SpringBoot.</li>
+              <li>
+                <span style={{color: "red"}}>Experienced Frameworks</span>: Rails, React, SpringBoot</li>
 
-              <li>Experienced Tools: Docker, Kubernetes, and cloud deployments using AWS ECS and EKS, 
-                Azure AKS with AD, and Google GKE.</li> 
+              <li>
+                <span style={{color: "red"}}>Experienced Tools</span>: Docker, Kubernetes, AWS ECS and EKS, 
+                Azure AKS with AD, Google GKE</li> 
             </ul>
 
         </div>
