@@ -161,7 +161,7 @@ code {
   max-height:inherit;
   box-sizing: border-box;
   overflow-y: scroll;
-  background-color: black;
+  background: linear-gradient(45deg, black, rgb(33, 2, 91));
   border-style: solid;
   border-radius: 2.25rem;
 }
@@ -212,7 +212,7 @@ code {
 .contacts {
   text-align: center;
   font-size: 2rem;
-  background-color: black;
+  background: linear-gradient(45deg, black, rgb(33, 2, 91));
   border-style: solid;
   border-radius: 2.25rem;
 }
@@ -263,7 +263,7 @@ code {
   flex-grow: 0;
   flex-shrink: 0;
   box-shadow: 0.063em 0.75em 1.563em rgb(0 0 0 / 78%);
-  background-color: black;
+  background: linear-gradient(45deg, black, rgb(33, 2, 91));
 }
 
 .proj-card a {
