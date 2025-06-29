@@ -89,7 +89,8 @@ code {
 }
 
 #home-intro {
-  margin-top: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .home-right-split {
@@ -158,13 +159,14 @@ code {
 }
 
 .description {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding: 2rem 4rem 2rem 4rem;
   text-align: center;
   max-height:inherit;
   box-sizing: border-box;
-  padding-bottom: 1%;
   overflow-y: scroll;
+  background-color: black;
+  border-style: solid;
+  border-radius: 2.25rem;
 }
 
 .icon-links {
@@ -172,10 +174,10 @@ code {
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-bottom: .25%;
-  margin-top: .25%;
-  padding-top: 4%;
   padding-left: 0px;
-  padding-bottom: 4%;
+  background-color: black;
+  border-style: solid;
+  border-radius: 2.25rem;
 }
 
 .icon-links li {
@@ -213,6 +215,9 @@ code {
 .contacts {
   text-align: center;
   font-size: 2rem;
+  background-color: black;
+  border-style: solid;
+  border-radius: 2.25rem;
 }
 .contacts h2 {
   text-align: center;
@@ -229,7 +234,6 @@ code {
 }
 
 .card-container {
-  /* height: 100%; */
   width: 100%;
   display:flex;
   padding-top: 1rem;
@@ -263,8 +267,6 @@ code {
   flex-shrink: 0;
   box-shadow: 0.063em 0.75em 1.563em rgb(0 0 0 / 78%);
   background-color: black;
-  
-
 }
 
 .proj-card a {
@@ -283,7 +285,7 @@ code {
     color: yellow;
 }
 
-@media screen and (max-width: 519px) {
+@media screen and (max-width: 660px) {
   .profile-pic { 
     display: none; 
   } 
@@ -310,20 +312,11 @@ code {
   }
 
   .proj-card {
-    font-size: .7rem;
     width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
     display: inline-block;
-  }
-
-  .proj-visual {
-    display: none;
-  }
-
-  .proj-visual-small {
-    display: block;
-    padding-top: 5%;
+    flex-basis: calc(100% / 1);
   }
 
   .about {
@@ -336,20 +329,16 @@ code {
 
   .skills {
     width: 100%;
+    bottom: 0px;
   }
 
   #home-intro {
     margin-top: 1rem;
     font-size: 1.2rem;
   }
-
-  .skills {
-    bottom: 0px;
-  }
-
 }
 
-@media screen and (min-width: 520px) and (max-width: 1120px) { 
+@media screen and (min-width: 661px) and (max-width: 1120px) { 
   .profile-pic { 
     display: none; 
   } 
@@ -372,20 +361,10 @@ code {
   }
 
   .proj-card {
-    font-size: .7rem;
     width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
     display: inline-block;
-  }
-
-  .proj-visual {
-    display: none;
-  }
-
-  .proj-visual-small {
-    display: block;
-    padding-top: 5%;
   }
 
   .about {
