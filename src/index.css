@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url(https://i.imgur.com/qgPbb4N.jpeg);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
   color: white;
   overflow: auto;
@@ -36,11 +36,10 @@ code {
   align-items: center;
   justify-content: space-evenly;
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   width: 100%;
   font-size: 2rem;
   font-family: Copperplate, Papyrus, fantasy;
-
 }
 
 .nav a {
@@ -55,11 +54,10 @@ code {
 .nav-routes {
   display:flex;
   margin: 0em;
-  justify-content: space-evenly
 }
 
 .nav li {
-  padding-right: 10%;
+  padding-right: 2rem;;
   list-style: none;
 }
 
@@ -80,7 +78,7 @@ code {
   height: 100%;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 5%;
+  /* padding-bottom: 5%; */
   box-sizing: border-box;
   text-align: center;
   overflow-y: auto;
@@ -88,13 +86,13 @@ code {
 }
 
 #home-intro {
-  margin-top: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .home-right-split {
   width: 50%;
   box-sizing: border-box;
-  height: 100%;
 }
 
 #first-name {
@@ -109,30 +107,6 @@ code {
   margin-top: .5rem;
   margin-bottom: 1rem;
   font-family: Copperplate, Papyrus, fantasy;
-}
-
-#hello-button {
-  background-color: red;
-  border-radius: 15px;
-  width: 40%;
-  font-family: Copperplate, Papyrus, fantasy;
-  display: flex;
-  align-items: center;
-  justify-content: center
-}
-
-#hello-button a {
-  font-size: 1.5rem;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#hello-button:hover {
-  transform: scale(1.1);
-  transition : all 0.4s linear;
 }
 
 .profile-pic {
@@ -156,8 +130,15 @@ code {
   font-size: 2rem;
 }
 
-.about p {
-  text-align: center;
+.about a {
+  color:white;
+  text-decoration: none;
+  transition : all 0.4s linear;
+}
+
+.about a:hover {
+  transform: scale(1.1);
+  color: gold;
 }
 
 .about h2 {
@@ -166,14 +147,35 @@ code {
   margin-bottom: 0px;
 }
 
+.about ul {
+  padding-left: 0;
+}
+
+.about li {
+  list-style:none;
+}
+
+.description {
+  padding: 2rem 4rem 2rem 4rem;
+  text-align: center;
+  max-height:inherit;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  background: linear-gradient(45deg, black, rgb(33, 2, 91));
+  border-style: solid;
+  border-radius: 2.25rem;
+}
+
 .icon-links {
   display:flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-bottom: .25%;
-  margin-top: .25%;
-  padding-top: 3%;
   padding-left: 0px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  background-color: black;
+  border-style: solid;
+  border-radius: 2.25rem;
 }
 
 .icon-links li {
@@ -193,24 +195,26 @@ code {
 .skills {
   display:flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   box-sizing: border-box;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 2rem 2rem 2rem 2rem;
   font-family: Copperplate, Papyrus, fantasy;
-  width: 50%;
-  position: absolute;
-  bottom: 20px; 
   left: 0; 
-  z-index: 10;
 }
 
 .skills li {
   list-style: none;
+  flex-basis: calc(100% / 5);
+  flex-grow: 0; /* Or 1, depending on desired behavior */
+  flex-shrink: 0;
 }
 
 .contacts {
   text-align: center;
   font-size: 2rem;
+  background: linear-gradient(45deg, black, rgb(33, 2, 91));
+  border-style: solid;
+  border-radius: 2.25rem;
 }
 .contacts h2 {
   text-align: center;
@@ -223,86 +227,59 @@ code {
 
 .contacts a:hover {
   transform: scale(1.1);
-  color: blue;
+  color: gold;
 }
 
-.description {
-  padding-left: 15%;
-  padding-right: 15%;
-  text-align: center;
-  max-height:inherit;
-  box-sizing: border-box;
-  padding-bottom: 1%;
-  overflow-y: scroll;
-}
-
-.projects {
-  height: 100%;
+.card-container {
   width: 100%;
   display:flex;
-  flex-direction: column;
   padding-top: 1rem;
-  box-sizing: border-box;
-  overflow-y: auto
+  flex-wrap: wrap;
 }
 
-.projects a {
+.card-container a {
   color: white;
 }
 
-.projects a:hover {
+.card-container a:hover {
   transform: scale(1.1);
 }
 
-.projects h2 {
+.card-container h2 {
   text-align: center;
   font-size: 3vw;
   margin-bottom: 0px;
 }
 
-.proj-1, .proj-2 {
-  width: 100%;
-  display: flex;
-  box-sizing: border-box;
-}
-
-.proj-1 {
-  padding-bottom: 3%;
-}
-
-.proj-des {
-  width: 50%;
-  padding-left: 4rem;
-  padding-right: 4rem;
+.proj-card {
+  width: 30%;
+  padding: 0 4rem 1rem 4rem;
   display: inline-block;
   font-size: 1rem;
   box-sizing:border-box;
+  border-style: solid;
+  border-radius: 2.25rem;
+  flex-basis: calc(100% / 3);
+  flex-grow: 0;
+  flex-shrink: 0;
+  box-shadow: 0.063em 0.75em 1.563em rgb(0 0 0 / 78%);
+  background: linear-gradient(45deg, black, rgb(33, 2, 91));
 }
 
-.proj-des a {
+.proj-card a {
   padding-right: 1rem;
 }
 
-.proj-des a:hover {
-  background: rgb(0, 0, 221);
-  color:white;
-  transition : all 0.4s linear;
-  border: 1px solid white;
-  text-decoration: none;
+.proj-card a:hover {
+  transform: scale(1.1);
+  color: gold;
 }
 
-.proj-visual {
-  width: 50%;
-  display: inline-block;
-  box-sizing:border-box;
-  padding-right: 4rem;
+.yellow-text {
+    color: yellow;
 }
 
-.proj-visual-small {
-  display: none;
-}
-
-@media screen and (max-width: 519px) {
+@media screen and (max-width: 660px) {
   .profile-pic { 
     display: none; 
   } 
@@ -328,21 +305,12 @@ code {
     height: 180px;
   }
 
-  .proj-des {
-    font-size: .7rem;
+  .proj-card {
     width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
     display: inline-block;
-  }
-
-  .proj-visual {
-    display: none;
-  }
-
-  .proj-visual-small {
-    display: block;
-    padding-top: 5%;
+    flex-basis: calc(100% / 1);
   }
 
   .about {
@@ -355,19 +323,16 @@ code {
 
   .skills {
     width: 100%;
+    bottom: 0px;
   }
 
   #home-intro {
     margin-top: 1rem;
     font-size: 1.2rem;
   }
-
-  .skills {
-    bottom: 0px;
-  }
 }
 
-@media screen and (min-width: 520px) and (max-width: 1120px) { 
+@media screen and (min-width: 661px) and (max-width: 1120px) { 
   .profile-pic { 
     display: none; 
   } 
@@ -389,21 +354,11 @@ code {
     height: 180px;
   }
 
-  .proj-des {
-    font-size: .7rem;
+  .proj-card {
     width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
     display: inline-block;
-  }
-
-  .proj-visual {
-    display: none;
-  }
-
-  .proj-visual-small {
-    display: block;
-    padding-top: 5%;
   }
 
   .about {
@@ -424,7 +379,7 @@ code {
 }
 
 @media screen and (min-width: 1600px) {
-  .proj-des {
+  .proj-card {
     font-size: 1.5rem;
   }
 }
@@ -436,10 +391,6 @@ code {
 }
 
 @media screen and (min-height: 650px) and (max-height: 698px) {
-  .icon-links {
-    padding-top: 0px;
-    margin-top: 0px;
-  }
 
   #first-name {
     margin-top: .5rem
@@ -452,7 +403,7 @@ code {
   }
 }
 
-@media screen and (min-height: 851px) {
+@media screen and (min-height: 933px) {
   #first-name {
     margin-top: 6rem;
   }

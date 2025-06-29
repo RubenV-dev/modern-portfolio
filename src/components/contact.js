@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiMail } from 'react-icons/fi'
 import Nav from './nav'
+import { AiOutlineLinkedin} from 'react-icons/ai'
 
 export default class Icon extends React.Component {
   render() {
@@ -8,19 +9,15 @@ export default class Icon extends React.Component {
         <>
         <Nav/>
         <div className="contacts">
-            <p>Open to discussing any work opportunities:</p>
+            <p style={{color: "red"}}>Open to discussing any work opportunities:</p>
             <p>
-                <a href="mailto:RubenVallejo101@gmail.com" 
-                target="_blank" 
-                rel="noopener noreferrer">
-                    <FiMail /> RubenVallejo101@gmail.com
-                </a>
+                <FiMail /> RubenVallejo101@gmail.com
             </p>
             <p>
-                <a href="mailto:r.will16@hotmail.com" 
-                target="_blank" 
+                <a href="https://www.linkedin.com/in/ruben-vallejo-a5317baa/"
+                target="_blank"
                 rel="noopener noreferrer">
-                    <FiMail /> r.will16@hotmail.com
+                    <AiOutlineLinkedin/> https://www.linkedin.com/in/ruben-vallejo-a5317baa/
                 </a>
             </p>
         </div>
