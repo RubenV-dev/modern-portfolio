@@ -35,11 +35,9 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* for smaller screen sizes need to find a replacment, that would fix the scroll sideways bug */
   padding-top: 2rem;
   padding-bottom: 2rem;
   width: 100%;
-  /* width 100 causing scrolling on mobile... if you change it messes up the larger page...*/
   font-size: 2rem;
   font-family: Copperplate, Papyrus, fantasy;
 }
@@ -56,11 +54,10 @@ code {
 .nav-routes {
   display:flex;
   margin: 0em;
-  justify-content: space-evenly
 }
 
 .nav li {
-  padding-right: 10%;
+  padding-right: 2rem;;
   list-style: none;
 }
 
@@ -173,8 +170,9 @@ code {
   display:flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-bottom: .25%;
   padding-left: 0px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
   background-color: black;
   border-style: solid;
   border-radius: 2.25rem;
@@ -199,8 +197,7 @@ code {
   justify-content: space-evenly;
   flex-wrap: wrap;
   box-sizing: border-box;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 2rem 2rem 2rem 2rem;
   font-family: Copperplate, Papyrus, fantasy;
   left: 0; 
 }
@@ -394,10 +391,6 @@ code {
 }
 
 @media screen and (min-height: 650px) and (max-height: 698px) {
-  .icon-links {
-    padding-top: 0px;
-    margin-top: 0px;
-  }
 
   #first-name {
     margin-top: .5rem
@@ -410,7 +403,7 @@ code {
   }
 }
 
-@media screen and (min-height: 851px) {
+@media screen and (min-height: 933px) {
   #first-name {
     margin-top: 6rem;
   }
