@@ -141,7 +141,7 @@ code {
 
 .about a:hover {
   transform: scale(1.1);
-  color: yellow;
+  color: gold;
 }
 
 .about h2 {
@@ -230,7 +230,7 @@ code {
 
 .contacts a:hover {
   transform: scale(1.1);
-  color: yellow;
+  color: gold;
 }
 
 .card-container {
@@ -274,11 +274,8 @@ code {
 }
 
 .proj-card a:hover {
-  background: rgb(0, 0, 221);
-  color:white;
-  transition : all 0.4s linear;
-  border: 1px solid white;
-  text-decoration: none;
+  transform: scale(1.1);
+  color: gold;
 }
 
 .yellow-text {
