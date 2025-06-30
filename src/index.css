@@ -132,7 +132,6 @@ code {
 
 .about a {
   color:white;
-  text-decoration: none;
   transition : all 0.4s linear;
 }
 
@@ -160,7 +159,6 @@ code {
   text-align: center;
   max-height:inherit;
   box-sizing: border-box;
-  overflow-y: scroll;
   background: linear-gradient(45deg, black, rgb(33, 2, 91));
   border-style: solid;
   border-radius: 2.25rem;
