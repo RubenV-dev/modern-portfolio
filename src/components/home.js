@@ -11,8 +11,8 @@ import { BiLogoSpringBoot } from "react-icons/bi"
 
 export default class Home extends React.Component {
   render() {
-    const profileImgUrl = "https://i.imgur.com/dOIUmth.jpeg"
-    const croppedProfileImgUrl = "https://i.imgur.com/cl4M6ge.jpeg"
+    const profileImgUrl = "https://i.imgur.com/ALR42NT.jpeg"
+    const croppedProfileImgUrl = "https://i.imgur.com/ALR42NT.jpeg"
     return (
         <div className="home-page">
             <Nav />
