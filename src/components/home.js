@@ -13,46 +13,93 @@ import {
 import { TbBrandTypescript } from "react-icons/tb";
 import { SiMysql, SiRubyonrails } from "react-icons/si";
 import { BiLogoSpringBoot } from "react-icons/bi";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Home() {
   const [showLanding, setShowLanding] = useState(true);
+  const [typedText, setTypedText] = useState("");
+  const [showCursor, setShowCursor] = useState(true);
   const profileImgUrl = "https://i.imgur.com/ALR42NT.jpeg";
   const croppedProfileImgUrl = "https://i.imgur.com/ALR42NT.jpeg";
+  const landingPageImgUrl = "https://i.imgur.com/dbpOZ8z.jpeg";
+
+  useEffect(() => {
+    const phrase = "Ruben Vallejo's Portfolio";
+    let index = 0;
+
+    const interval = setInterval(() => {
+      setTypedText(phrase.slice(0, index++));
+      if (index > phrase.length) {
+        clearInterval(interval);
+        setShowCursor(false);
+      }
+    }, 120);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
-    <div className="w-full h-screen overflow-hidden bg-black text-white">
-      {showLanding && (
-        <div
-          className={`w-full h-full flex flex-col items-center justify-center bg-cover bg-center relative transition-opacity duration-1000 ${
-            showLanding ? "opacity-100" : "opacity-0"
-          }`}
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1549921296-3ecf9f3a3be8?auto=format&fit=crop&w=1950&q=80')",
-          }}
-        >
-          <h1 className="text-5xl font-bold tracking-wide bg-black/60 px-6 py-4 rounded-2xl shadow-xl transform transition-all duration-700 translate-y-0 opacity-100">
-            Ruben Vallejo's Portfolio
-          </h1>
+    <div className="relative w-full h-screen overflow-hidden bg-black text-white">
+      <div
+        className={`absolute inset-0 flex flex-col items-center justify-center bg-cover bg-center transition-opacity duration-700 ease-in-out ${
+          showLanding ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+        style={{
+          backgroundImage: `url(${landingPageImgUrl})`,
+        }}
+      >
+        <h1 className="text-5xl font-bold tracking-wide bg-black/60 px-6 py-4 rounded-2xl shadow-xl transition-transform duration-700 ease-in-out transform ${showLanding ? 'translate-y-0' : '-translate-y-10'}">
+          {typedText}
+          {showCursor && (
+            <span className="inline-block w-1 h-8 ml-1 bg-white animate-pulse align-middle" />
+          )}
+        </h1>
 
-          <div className="absolute bottom-12">
-            <button
-              className="px-6 py-3 text-lg rounded-xl bg-purple-600 hover:bg-purple-700 shadow-xl"
-              onClick={() => setShowLanding(false)}
-            >
-              Enter
-            </button>
-          </div>
+        <div className="absolute bottom-12">
+          <button
+            className="px-6 py-3 text-lg rounded-xl bg-purple-600 hover:bg-purple-700 shadow-xl"
+            onClick={() => setShowLanding(false)}
+          >
+            Enter
+          </button>
         </div>
-      )}
-
-      {!showLanding && (
+      </div>
+      {/* {Second main page} */}
+      <div
+        className={`absolute inset-0 w-full h-full p-10 grid place-items-center bg-gray-900 transition-opacity duration-700 ease-in-out ${
+          !showLanding ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+      >
+        {/* <div className="text-center max-w-2xl transition-transform duration-700 ease-in-out transform ${!showLanding ? 'translate-y-0' : 'translate-y-10'}">
+          <h1 className="text-4xl font-bold mb-4">Jahns Portfolio</h1>
+          <p className="text-lg text-gray-300 mb-8">
+            Explore my modern software projects, from backend systems to
+            real-time apps and full-stack builds.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="p-6 bg-gray-800 rounded-2xl shadow-lg">
+              Project 1
+            </div>
+            <div className="p-6 bg-gray-800 rounded-2xl shadow-lg">
+              Project 2
+            </div>
+            <div className="p-6 bg-gray-800 rounded-2xl shadow-lg">
+              Project 3
+            </div>
+            <div className="p-6 bg-gray-800 rounded-2xl shadow-lg">
+              Project 4
+            </div>
+          </div>
+        </div> */}
         <div className="home-page">
           <Nav />
           <div className="home-left-split">
-            <h2 id="first-name">Ruben</h2>
-            <h2 id="last-name"> Vallejo</h2>
+            <h2 id="first-name" className="text-4xl font-bold mb-4">
+              Ruben
+            </h2>
+            <h2 id="last-name" className="text-4xl font-bold mb-4">
+              Vallejo
+            </h2>
             <img
               className="sml-profile-pic"
               src={profileImgUrl}
@@ -144,7 +191,7 @@ export default function Home() {
             />
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }
