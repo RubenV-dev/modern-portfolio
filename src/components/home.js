@@ -66,47 +66,28 @@ export default function Home() {
       </div>
       {/* {Second main page} */}
       <div
-        className={`absolute inset-0 w-full h-full p-10 grid place-items-center bg-gray-900 transition-opacity duration-700 ease-in-out ${
+        className={`absolute inset-0 w-full h-full p-10 grid place-items-center bg-gray-900 overflow-y-auto transition-opacity duration-700 ease-in-out ${
           !showLanding ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
-        {/* <div className="text-center max-w-2xl transition-transform duration-700 ease-in-out transform ${!showLanding ? 'translate-y-0' : 'translate-y-10'}">
-          <h1 className="text-4xl font-bold mb-4">Jahns Portfolio</h1>
-          <p className="text-lg text-gray-300 mb-8">
-            Explore my modern software projects, from backend systems to
-            real-time apps and full-stack builds.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="p-6 bg-gray-800 rounded-2xl shadow-lg">
-              Project 1
-            </div>
-            <div className="p-6 bg-gray-800 rounded-2xl shadow-lg">
-              Project 2
-            </div>
-            <div className="p-6 bg-gray-800 rounded-2xl shadow-lg">
-              Project 3
-            </div>
-            <div className="p-6 bg-gray-800 rounded-2xl shadow-lg">
-              Project 4
-            </div>
-          </div>
-        </div> */}
-        <div className="home-page">
-          <Nav />
-          <div className="home-left-split">
-            <h2 id="first-name" className="text-4xl font-bold mb-4">
+        <Nav />
+        {/* Container for left and right splits */}
+        <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+          {/* left split */}
+          <div className="text-left max-w-xl mx-auto transition-transform duration-700 ease-in-out transform ${!showLanding ? 'translate-y-0' : 'translate-y-10'}">
+            <h2 className="font-mono text-center text-8xl font-bold mb-4 mt-2">
               Ruben
             </h2>
-            <h2 id="last-name" className="text-4xl font-bold mb-4">
+            <h2 className="font-mono text-center text-8xl font-bold mb-4">
               Vallejo
             </h2>
             <img
-              className="sml-profile-pic"
+              className="rounded-full lg:hidden"
               src={profileImgUrl}
               alt="profile pic"
               referrerPolicy="no-referrer"
             />
-            <p id="home-intro">
+            <p className="text-3xl text-gray-300 mb-8 mt-8">
               Hello. Im a Full Stack Software Engineer currently based in New
               York City.
             </p>
@@ -139,50 +120,51 @@ export default function Home() {
                 </a>
               </li>
             </ul>
-            <ul className="skills">
-              <li>
+            <ul className="grid grid-cols-5 gap-6 mb-8 mt-4">
+              <li className="flex flex-col items-center">
                 <IoLogoJavascript size="4.2rem" />
-                <p>Javascript</p>
+                <p className="mt-2 text-sm text-gray-300">Javascript</p>
               </li>
-              <li>
+              <li className="flex flex-col items-center">
                 <TbBrandTypescript size="4.2rem" />
-                <p>Typescript</p>
+                <p className="mt-2 text-sm text-gray-300">Typescript</p>
               </li>
-              <li>
+              <li className="flex flex-col items-center">
                 <DiRuby size="4.2rem" />
-                <p>Ruby</p>
+                <p className="mt-2 text-sm text-gray-300">Ruby</p>
               </li>
-              <li>
+              <li className="flex flex-col items-center">
                 <AiOutlineJava size="4.2rem" />
-                <p>Java</p>
+                <p className="mt-2 text-sm text-gray-300">Java</p>
               </li>
-              <li>
+              <li className="flex flex-col items-center">
                 <AiOutlineKubernetes size="4.2rem" />
-                <p>Kubernetes</p>
+                <p className="mt-2 text-sm text-gray-300">Kubernetes</p>
               </li>
-              <li>
+              <li className="flex flex-col items-center">
                 <FaReact size="4.2rem" />
-                <p>React</p>
+                <p className="mt-2 text-sm text-gray-300">React</p>
               </li>
-              <li>
+              <li className="flex flex-col items-center">
                 <SiRubyonrails size="4.2rem" />
-                <p>Ruby on Rails</p>
+                <p className="mt-2 text-sm text-gray-300">Ruby on Rails</p>
               </li>
-              <li>
+              <li className="flex flex-col items-center">
                 <BiLogoSpringBoot size="4.2rem" />
-                <p>SpringBoot</p>
+                <p className="mt-2 text-sm text-gray-300">SpringBoot</p>
               </li>
-              <li>
+              <li className="flex flex-col items-center">
                 <SiMysql size="4.2rem" />
-                <p>MySql</p>
+                <p className="mt-2 text-sm text-gray-300">MySql</p>
               </li>
-              <li>
+              <li className="flex flex-col items-center">
                 <DiPostgresql size="4.2rem" />
-                <p>PostgreSQL</p>
+                <p className="mt-2 text-sm text-gray-300">PostgreSQL</p>
               </li>
             </ul>
           </div>
-          <div className="home-right-split">
+          {/* right split */}
+          <div className="flex justify-center items-start hidden lg:block">
             <img
               className="profile-pic"
               src={croppedProfileImgUrl}
