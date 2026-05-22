@@ -17,103 +17,158 @@ import { BiLogoSpringBoot } from "react-icons/bi";
 export default class Home extends React.Component {
   render() {
     const profileImgUrl = "https://i.imgur.com/6zRtywb.png";
+
     return (
-      <div className="home-page">
+      <main className="relative z-10 min-h-screen">
         <Nav />
-        <div className="home-left-split">
+
+        <section className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 px-8 lg:px-24 pt-10">
           <img
-            className="sml-profile-pic"
+            className="block md:hidden w-full h-full rounded-full"
             src={profileImgUrl}
             alt="profile pic"
             referrerPolicy="no-referrer"
           />
-          <h2 id="first-name">Ruben</h2>
-          <h2 id="last-name"> Vallejo</h2>
-          <p id="home-intro">
-            Hello. Im a Full Stack Software Engineer currently based in New York
-            City.
-          </p>
-          <ul className="icon-links">
-            <li>
+          <div>
+            <h1 className="font-copperplate text-4xl lg:text-8xl font-black uppercase leading-none tracking-wide text-center">
+              Ruben
+              <br />
+              Vallejo
+            </h1>
+
+            <p className="mt-10 text-lg md:text-2xl text-gray-200 max-w-2xl">
+              Hello. Im a Full Stack Software Engineer currently based in New
+              York City.
+            </p>
+
+            <div className="mt-12 w-full max-w-2xl border-2 border-white rounded-full bg-black py-6 px-12 flex items-center justify-around text-4xl">
               <a
                 href="https://github.com/RubenV-dev"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-yellow-500 transition-colors duration-300"
               >
-                <FiGithub size="2rem" />
+                <i className="fa-brands fa-github hover:scale-110 transition">
+                  <FiGithub size="2rem" />
+                </i>
               </a>
-            </li>
-            <li>
+
               <a
                 href="https://www.linkedin.com/in/ruben-vallejo-a5317baa/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-yellow-500 transition-colors duration-300"
               >
-                <AiOutlineLinkedin size="2rem" />
+                <i className="fa-brands fa-linkedin hover:scale-110 transition">
+                  <AiOutlineLinkedin size="2rem" />
+                </i>
               </a>
-            </li>
-            <li>
+
               <a
                 href="https://medium.com/@rv.results"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-yellow-500 transition-colors duration-300"
               >
-                <AiOutlineMedium size="2rem" />
+                <i className="fa-brands fa-medium hover:scale-110 transition">
+                  <AiOutlineMedium size="2rem" />
+                </i>
               </a>
-            </li>
-          </ul>
-          <ul className="skills">
-            <li>
-              <IoLogoJavascript size="4.2rem" />
-              <p>Javascript</p>
-            </li>
-            <li>
-              <TbBrandTypescript size="4.2rem" />
-              <p>Typescript</p>
-            </li>
-            <li>
-              <DiRuby size="4.2rem" />
-              <p>Ruby</p>
-            </li>
-            <li>
-              <AiOutlineJava size="4.2rem" />
-              <p>Java</p>
-            </li>
-            <li>
-              <AiOutlineKubernetes size="4.2rem" />
-              <p>Kubernetes</p>
-            </li>
-            <li>
-              <FaReact size="4.2rem" />
-              <p>React</p>
-            </li>
-            <li>
-              <SiRubyonrails size="4.2rem" />
-              <p>Ruby on Rails</p>
-            </li>
-            <li>
-              <BiLogoSpringBoot size="4.2rem" />
-              <p>SpringBoot</p>
-            </li>
-            <li>
-              <SiMysql size="4.2rem" />
-              <p>MySql</p>
-            </li>
-            <li>
-              <DiPostgresql size="4.2rem" />
-              <p>PostgreSQL</p>
-            </li>
-          </ul>
-        </div>
-        <div className="home-right-split">
-          <img
-            className="profile-pic"
-            src={profileImgUrl}
-            alt="profile pic"
-            referrerPolicy="no-referrer"
-          />
-        </div>
-      </div>
+            </div>
+
+            <div className="grid grid-cols-3 md:grid-cols-5 gap-10 mt-20 text-center justify-items-center">
+              <div>
+                <i className="fa-brands fa-js text-6xl">
+                  <IoLogoJavascript size="3rem" />
+                </i>
+                <p className="mt-4 tracking-widest uppercase text-lg">
+                  Javascript
+                </p>
+              </div>
+
+              <div>
+                <i className="text-2xl">
+                  <TbBrandTypescript size="3rem" />
+                </i>
+                <p className="mt-4 tracking-widest uppercase text-lg">
+                  Typescript
+                </p>
+              </div>
+
+              <div>
+                <i className="fa-regular fa-gem text-6xl">
+                  <DiRuby size="3rem" />
+                </i>
+                <p className="mt-4 tracking-widest uppercase text-lg">Ruby</p>
+              </div>
+
+              <div>
+                <i className="fa-brands fa-java text-6xl">
+                  <AiOutlineJava size="3rem" />
+                </i>
+                <p className="mt-4 tracking-widest uppercase text-lg">Java</p>
+              </div>
+
+              <div>
+                <i className="fa-brands fa-kubernetes text-6xl">
+                  <AiOutlineKubernetes size="3rem" />
+                </i>
+                <p className="mt-4 tracking-widest uppercase text-lg">
+                  Kubernetes
+                </p>
+              </div>
+
+              <div>
+                <i className="fa-brands fa-react text-6xl">
+                  <FaReact size="3rem" />
+                </i>
+                <p className="mt-4 tracking-widest uppercase text-lg">React</p>
+              </div>
+
+              <div>
+                <i className="fa-solid fa-gauge-high text-6xl">
+                  <SiRubyonrails size="3rem" />
+                </i>
+                <p className="mt-4 tracking-widest uppercase text-lg">
+                  Ruby on Rails
+                </p>
+              </div>
+
+              <div>
+                <i className="fa-solid fa-leaf text-6xl">
+                  <BiLogoSpringBoot size="3rem" />
+                </i>
+                <p className="mt-4 tracking-widest uppercase text-lg">
+                  SpringBoot
+                </p>
+              </div>
+
+              <div>
+                <i className="fa-solid fa-database text-6xl">
+                  <SiMysql size="3rem" />
+                </i>
+                <p className="mt-4 text-2xl">MySQL</p>
+              </div>
+            </div>
+            <div>
+              <i className="fa-solid fa-database text-6xl">
+                <DiPostgresql size="3rem" />
+              </i>
+              <p className="mt-4 text-2xl">PostgresSql</p>
+            </div>
+          </div>
+
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative w-1/2 md:w-full max-w-[700px] overflow-hidden shadow-2xl">
+              <img
+                src={profileImgUrl}
+                alt="Ruben Vallejo"
+                className="hidden md:block w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
     );
   }
 }
