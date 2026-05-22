@@ -5,7 +5,7 @@ export default class Nav extends React.Component {
   render() {
     return (
       <>
-        <nav className="flex items-center justify-center md:justify-between px-6 md:px-10 lg:px-24 pt-8 pb-0 mb-0 gap-8 md:gap-0">
+        <nav className="flex items-center justify-center md:justify-between px-6 md:px-10 lg:px-24 py-3 gap-8 md:gap-0">
           <Link
             to="/"
             className="text-3xl font-black tracking-widest hover:text-yellow-500 transition-colors duration-300"
