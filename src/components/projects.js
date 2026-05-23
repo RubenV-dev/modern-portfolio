@@ -65,7 +65,7 @@ export default function Projects() {
   return (
     <>
       <Nav />
-      <div className="w-full max-w-2xl mx-auto mt-16 px-12 relative">
+      <div className="w-full max-w-6xl mx-auto mt-16 px-12 relative">
         <div className="relative h-64 w-full overflow-hidden bg-slate-900 border border-zinc-800 rounded-2xl p-8 shadow-xl">
           <div className="relative w-full h-full">
             {ossContributions.map((proj, index) => {
@@ -106,7 +106,7 @@ export default function Projects() {
                       rel="noopener noreferrer"
                       className="text-xs md:text-sm font-bold bg-white text-black px-4 py-2 rounded-full hover:bg-yellow-500 hover:scale-105 transition active:scale-95"
                     >
-                      Merged PR
+                      Details
                     </a>
                   </div>
                 </div>
@@ -148,7 +148,6 @@ export default function Projects() {
       </div>
       <div className="flex flex-col md:flex-row gap-4 w-full max-w-6xl mx-auto mt-16 px-12 relative">
         <div className="flex flex-col justify-between w-full max-w-sm min-h-[280px] bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl transition-all duration-300">
-          {/* Top Section: Title & Description */}
           <div>
             <h2 className="text-xs font-bold tracking-widest text-slate-500 uppercase">
               Project
@@ -167,7 +166,6 @@ export default function Projects() {
             </p>
           </div>
 
-          {/* Bottom Section: Stack & Link */}
           <div className="mt-6 pt-4 border-t border-slate-800/60 flex flex-col gap-3">
             <p className="text-xs font-semibold tracking-widest text-slate-500 uppercase">
               Built with:{" "}

@@ -10,7 +10,6 @@ export default class Icon extends React.Component {
         <Nav />
         <div className="contacts min-h-svh w-full flex items-center justify-center p-4 sm:p-8">
           <div className="w-full max-w-2xl bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl transition-all duration-300 hover:border-yellow-500/30 hover:shadow-yellow-500/5">
-            {/* Header Area */}
             <div className="border-b border-slate-800/80 pb-6 mb-8">
               <h2 className="text-xs font-bold tracking-widest text-slate-500 uppercase mb-2">
                 Get In Touch
@@ -20,9 +19,7 @@ export default class Icon extends React.Component {
               </h1>
             </div>
 
-            {/* Interaction Channels Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {/* Email Card Component */}
               <a
                 href="mailto:RubenVallejo101@gmail.com"
                 className="flex items-center gap-4 bg-slate-950 border border-slate-800/60 p-4 rounded-xl transition-all duration-300 hover:border-yellow-500/40 hover:bg-slate-900/40 group"
@@ -40,7 +37,6 @@ export default class Icon extends React.Component {
                 </div>
               </a>
 
-              {/* LinkedIn Card Component */}
               <a
                 href="https://www.linkedin.com/in/ruben-vallejo-a5317baa/"
                 target="_blank"

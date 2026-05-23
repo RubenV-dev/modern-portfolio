@@ -6,7 +6,6 @@ export default function About() {
       <Nav />
       <div className="min-h-svh w-full flex items-center justify-center p-4 lg:p-8">
         <div className="w-full max-w-4xl bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl transition-all duration-300 hover:border-yellow-500/30 hover:shadow-yellow-500/5">
-          {/* Header Area */}
           <div className="border-b border-slate-800/80 pb-6 mb-8">
             <h2 className="text-xs font-bold tracking-widest text-slate-500 uppercase mb-2">
               About Me
@@ -16,14 +15,15 @@ export default function About() {
             </h1>
           </div>
 
-          {/* Bio & OSS Highlight */}
           <div className="space-y-6">
             <p className="text-slate-400 text-base sm:text-lg leading-relaxed max-w-3xl">
-              Full Stack Web Developer with 3 years of experience creating and
-              testing product features and deployments. I also have years of
-              experience in the healthcare/research sector and bring strong
-              analytical skills to technical projects along with strong customer
-              support experience obtained from working directly with patients.
+              Full-Stack Software Engineer with 4 years of experience as an
+              individual contributor owning feature development and production
+              deployments. Integrates strong analytical skills and stakeholder
+              communication models refined within the healthcare and research
+              sectors to deliver reliable, technical solutions. I blend strong
+              analytical problem-solving with product ownership to build, test,
+              and scale user-focused features.
             </p>
 
             <p className="text-sm font-medium text-slate-400 flex items-center flex-wrap gap-2">
@@ -42,9 +42,7 @@ export default function About() {
             </p>
           </div>
 
-          {/* Technical Capabilities Matrix */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 pt-8 border-t border-slate-800/60">
-            {/* Languages Column */}
             <div className="space-y-2">
               <h3 className="text-xs font-semibold tracking-widest text-slate-500 uppercase">
                 Languages
@@ -54,23 +52,23 @@ export default function About() {
               </p>
             </div>
 
-            {/* Frameworks Column */}
             <div className="space-y-2">
               <h3 className="text-xs font-semibold tracking-widest text-slate-500 uppercase">
                 Frameworks
               </h3>
               <p className="text-yellow-500 font-medium text-sm sm:text-base leading-relaxed">
-                Ruby on Rails, React, Spring Boot
+                Rails, React, Spring Boot, Node.js
               </p>
             </div>
 
-            {/* Infrastructure Column */}
             <div className="space-y-2">
               <h3 className="text-xs font-semibold tracking-widest text-slate-500 uppercase">
                 Tools & Cloud
               </h3>
               <p className="text-yellow-500 font-medium text-sm sm:text-base leading-relaxed">
-                Docker, Kubernetes, AWS (ECS/EKS), Azure AKS, Google GKE
+                Docker, Kubernetes, Amazon Elastic Cloud Services, Azure Active
+                Directory, Google Kubernetes Engine, Tailwind, Jira, Concourse,
+                Material UI
               </p>
             </div>
           </div>
