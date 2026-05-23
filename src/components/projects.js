@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Nav from "./nav";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
@@ -44,15 +44,15 @@ export default function Projects() {
     },
   ];
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? ossContributions.length - 1 : prevIndex - 1,
     );
-  };
+  }, [ossContributions.length]);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % ossContributions.length);
-  };
+  }, [ossContributions.length]);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -60,14 +60,11 @@ export default function Projects() {
     }, 7000);
 
     return () => clearInterval(timer);
-  }, [ossContributions.length]);
+  }, [ossContributions.length, nextSlide]);
 
   return (
     <>
       <Nav />
-      <h3 className="text-xl md:text-2xl font-bold uppercase tracking-wider text-yellow-500 bg-slate-900">
-        Open Source Contributions:
-      </h3>
       <div className="w-full max-w-2xl mx-auto mt-16 px-12 relative">
         <div className="relative h-64 w-full overflow-hidden bg-slate-900 border border-zinc-800 rounded-2xl p-8 shadow-xl">
           <div className="relative w-full h-full">
@@ -85,6 +82,9 @@ export default function Projects() {
                   }}
                 >
                   <div>
+                    <h2 className="text-xs font-bold tracking-widest text-slate-500 uppercase">
+                      Open Source Contribution
+                    </h2>
                     <h3 className="font-copperplate text-xl md:text-2xl font-bold uppercase tracking-wider text-white">
                       {proj.title}
                     </h3>
@@ -93,7 +93,7 @@ export default function Projects() {
                     </p>
                   </div>
 
-                  <div className="flex justify-between items-end border-t border-zinc-800/60 pt-4 mt-4">
+                  <div className="flex justify-between items-end border-t border-zinc-800/60 pt-1 mt-1 lg:pt-4 lg:mt-4">
                     <p className="text-xs md:text-sm text-zinc-500 uppercase tracking-widest font-medium">
                       Built with:{" "}
                       <span className="text-yellow-500 font-semibold">
@@ -146,13 +146,13 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      <h3 className="text-xl md:text-2xl font-bold uppercase tracking-wider text-yellow-500 bg-slate-900">
-        Projects:
-      </h3>
       <div className="flex flex-col md:flex-row gap-4 w-full max-w-6xl mx-auto mt-16 px-12 relative">
         <div className="flex flex-col justify-between w-full max-w-sm min-h-[280px] bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl transition-all duration-300">
           {/* Top Section: Title & Description */}
           <div>
+            <h2 className="text-xs font-bold tracking-widest text-slate-500 uppercase">
+              Project
+            </h2>
             <h3 className="text-2xl font-bold tracking-wide text-white mb-3">
               Intake
             </h3>
@@ -215,6 +215,9 @@ export default function Projects() {
         </div>
         <div className="flex flex-col justify-between w-full max-w-sm min-h-[280px] bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl transition-all duration-300">
           <div>
+            <h2 className="text-xs font-bold tracking-widest text-slate-500 uppercase">
+              Project
+            </h2>
             <h3 className="text-2xl font-bold tracking-wide text-white mb-3">
               K9 Strollers
             </h3>
