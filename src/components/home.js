@@ -17,7 +17,6 @@ import { BiLogoSpringBoot } from "react-icons/bi";
 export default class Home extends React.Component {
   render() {
     const profileImgUrl = "https://i.imgur.com/6zRtywb.png";
-    const backgroundImg = "https://i.imgur.com/dbpOZ8z.jpeg";
 
     return (
       <main className="relative z-10 min-h-screen">
@@ -52,7 +51,7 @@ export default class Home extends React.Component {
               </div>
             </div>
 
-            <p className="bg-black/75 mt-10 text-lg md:text-2xl text-yellow-500 text-center">
+            <p className="bg-black/75 mt-10 text-lg md:text-2xl text-yellow-500 text-center font-bold">
               Hello. Im a Full Stack Software Engineer currently based in New
               York City.
             </p>
