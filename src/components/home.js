@@ -17,6 +17,7 @@ import { BiLogoSpringBoot } from "react-icons/bi";
 export default class Home extends React.Component {
   render() {
     const profileImgUrl = "https://i.imgur.com/6zRtywb.png";
+    const backgroundImg = "https://i.imgur.com/dbpOZ8z.jpeg";
 
     return (
       <main className="relative z-10 min-h-screen">
@@ -24,25 +25,39 @@ export default class Home extends React.Component {
 
         <section className="flex flex-col lg:flex-row h-screen overflow-hidden">
           {/* Left Container */}
-          <div className="w-full lg:w-1/2 h-full overflow-y-auto px-8 lg:px-24 pt-10 pb-16">
+          <div className="w-full lg:w-1/2 h-full overflow-y-auto px-8 lg:px-24 pt-10 lg:pt-0 pb-16">
             <img
               className="block lg:hidden w-64 h-64 rounded-full mb-6 mx-auto object-cover"
               src={profileImgUrl}
               alt="profile pic"
               referrerPolicy="no-referrer"
             />
-            <h1 className="font-copperplate text-4xl lg:text-7xl font-black uppercase leading-none tracking-wide text-center">
-              Ruben
-              <br />
-              Vallejo
-            </h1>
 
-            <p className="mt-10 text-lg md:text-2xl text-gray-200 max-w-2xl">
+            <div className="flex items-center justify-center p-6">
+              <div className="bg-gradient-to-b from-amber-200 via-amber-400 to-amber-600 p-6 rounded-2xl shadow-inner border-2 border-amber-300/50 w-full text-center">
+                <h2
+                  className="font-copperplate font-black tracking-wider text-amber-950 uppercase select-none leading-none
+                       text-2xl sm:text-3xl md:text-4xl min-[375px]:text-[7vw]"
+                  style={{
+                    textShadow:
+                      "0 1px 0 rgba(255,240,200,0.6), 0 -1px 0 rgba(120,60,0,0.5)",
+                  }}
+                >
+                  Ruben Vallejo
+                </h2>
+
+                <p className="font-serif text-sm italic text-amber-900/80 mt-2 tracking-wide">
+                  Full Stack Software Engineer
+                </p>
+              </div>
+            </div>
+
+            <p className="bg-black/75 mt-10 text-lg md:text-2xl text-yellow-500 text-center">
               Hello. Im a Full Stack Software Engineer currently based in New
               York City.
             </p>
 
-            <div className="mt-12 w-full max-w-2xl border-2 border-white rounded-full bg-black py-6 px-12 flex items-center justify-around text-4xl">
+            <div className="mt-12 w-full border-2 border-white rounded-full bg-black py-6 px-12 flex items-center justify-around text-4xl">
               <a
                 href="https://github.com/RubenV-dev"
                 target="_blank"
@@ -169,7 +184,7 @@ export default class Home extends React.Component {
             </div>
           </div>
           {/* Right container */}
-          <div className="hidden lg:block lg:w-1/2 h-full relative bg-black">
+          <div className="hidden lg:block lg:w-1/2 h-screen relative bg-black">
             <img
               src={profileImgUrl}
               alt="Ruben Vallejo"
