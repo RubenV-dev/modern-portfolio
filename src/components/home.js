@@ -19,10 +19,10 @@ export default class Home extends React.Component {
     const profileImgUrl = "https://i.imgur.com/6zRtywb.png";
 
     return (
-      <main className="relative z-10 min-h-screen">
+      <main className="relative z-10 min-h-svh">
         <Nav />
 
-        <section className="flex flex-col lg:flex-row h-screen overflow-hidden">
+        <section className="flex flex-col lg:flex-row h-svh overflow-hidden">
           {/* Left Container */}
           <div className="w-full lg:w-1/2 h-full overflow-y-auto px-8 lg:px-24 pt-10 lg:pt-0 pb-16">
             <img
@@ -51,7 +51,7 @@ export default class Home extends React.Component {
               </div>
             </div>
 
-            <p className="bg-black/75 mt-10 text-lg md:text-2xl text-yellow-500 text-center font-bold">
+            <p className="bg-black/75 mt-10 text-lg md:text-2xl text-yellow-500 text-center font-bold rounded-2xl">
               Hello. Im a Full Stack Software Engineer currently based in New
               York City.
             </p>
@@ -183,7 +183,7 @@ export default class Home extends React.Component {
             </div>
           </div>
           {/* Right container */}
-          <div className="hidden lg:block lg:w-1/2 h-screen relative bg-black">
+          <div className="hidden lg:block lg:w-1/2 h-svh relative bg-black">
             <img
               src={profileImgUrl}
               alt="Ruben Vallejo"

@@ -68,7 +68,6 @@ export default function Projects() {
       <h3 className="text-xl md:text-2xl font-bold uppercase tracking-wider text-yellow-500 bg-slate-900">
         Open Source Contributions:
       </h3>
-
       <div className="w-full max-w-2xl mx-auto mt-16 px-12 relative">
         <div className="relative h-64 w-full overflow-hidden bg-slate-900 border border-zinc-800 rounded-2xl p-8 shadow-xl">
           <div className="relative w-full h-full">
@@ -150,9 +149,8 @@ export default function Projects() {
       <h3 className="text-xl md:text-2xl font-bold uppercase tracking-wider text-yellow-500 bg-slate-900">
         Projects:
       </h3>
-
       <div className="flex flex-col md:flex-row gap-4 w-full max-w-6xl mx-auto mt-16 px-12 relative">
-        <div className="flex flex-col justify-between w-full max-w-sm min-h-[280px] bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl transition-all duration-300 hover:scale-[1.02] hover:border-yellow-500/50 hover:shadow-2xl hover:shadow-yellow-500/5">
+        <div className="flex flex-col justify-between w-full max-w-sm min-h-[280px] bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl transition-all duration-300">
           {/* Top Section: Title & Description */}
           <div>
             <h3 className="text-2xl font-bold tracking-wide text-white mb-3">
@@ -215,7 +213,7 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-between w-full max-w-sm min-h-[280px] bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl transition-all duration-300 hover:scale-[1.02] hover:border-yellow-500/50 hover:shadow-2xl hover:shadow-yellow-500/5">
+        <div className="flex flex-col justify-between w-full max-w-sm min-h-[280px] bg-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl transition-all duration-300">
           <div>
             <h3 className="text-2xl font-bold tracking-wide text-white mb-3">
               K9 Strollers
