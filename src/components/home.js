@@ -187,7 +187,7 @@ export default class Home extends React.Component {
           <div className="hidden lg:block lg:w-[40%] h-svh relative bg-black">
             <img
               src={profileImgUrl}
-              alt="profile image"
+              alt="Ruben Vallejo"
               className="absolute top-0 left-0 w-full h-full object-cover object-top"
             />
           </div>
