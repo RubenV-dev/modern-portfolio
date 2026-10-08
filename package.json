@@ -16,7 +16,7 @@
   "homepage": "https://rubenvallejo.net",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cp build/index.html build/404.html",
+    "build": "react-scripts build && copyfiles build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.5.0",
+    "copyfiles": "^2.4.1",
     "gh-pages": "^6.1.1",
     "postcss": "^8.5.15",
     "react-router-dom": "^6.21.3",
