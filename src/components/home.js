@@ -16,15 +16,15 @@ import { BiLogoSpringBoot } from "react-icons/bi";
 
 export default class Home extends React.Component {
   render() {
-    const profileImgUrl = "https://i.imgur.com/6zRtywb.png";
+    const profileImgUrl = "https://i.imgur.com/Ej0BSIA.png";
 
     return (
-      <main className="relative z-10 min-h-svh">
+      <main className="relative z-10 h-auto">
         <Nav />
 
-        <section className="flex flex-col lg:flex-row h-svh overflow-hidden">
-          <div className="w-full lg:w-[60%] h-full overflow-y-auto px-8 lg:px-24 pt-10 lg:pt-0 pb-16">
-            <div className="w-full max-w-4xl bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl transition-all duration-300 hover:border-yellow-500/20 hover:shadow-yellow-500/5">
+        <section className="flex flex-col min-[2000px]:flex-row overflow-hidden items-start items-stretch ">
+          <div className="w-full min-[2000px]:w-[60%] overflow-y-auto px-8 lg:px-24 pt-10 lg:pt-0 pb-16">
+            <div className="w-full max-w-6xl mx-auto bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-10 shadow-2xl transition-all duration-300 hover:border-yellow-500/20 hover:shadow-yellow-500/5">
               <div className="relative bg-slate-950 border border-slate-900 ring-4 ring-slate-900/50 rounded-xl p-6 sm:p-8 shadow-inner overflow-hidden">
                 <div className="absolute inset-0 opacity-[0.02] bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
 
@@ -39,7 +39,7 @@ export default class Home extends React.Component {
                 </div>
 
                 <img
-                  className="block lg:hidden w-64 h-64 rounded-full mb-6 mx-auto object-cover"
+                  className="block min-[2000px]:hidden w-64 h-64 rounded-full mb-6 mx-auto object-cover"
                   src={profileImgUrl}
                   alt="profile pic"
                   referrerPolicy="no-referrer"
@@ -86,12 +86,12 @@ export default class Home extends React.Component {
               </div>
             </div>
 
-            <div className="flex flex-col mt-4 bg-slate-950 rounded-t-xl pl-4 pt-4 border-t-4 border-l-4 border-r-4 border-slate-900">
+            <div className="flex flex-col mt-4 mx-auto bg-slate-950 max-w-6xl rounded-t-xl pl-4 pt-4 border-t-4 border-l-4 border-r-4 border-slate-900">
               <h3 className="text-2xl font-extrabold tracking-wide text-white">
                 Experience
               </h3>
             </div>
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-4 xl:grid-cols-5 gap-x-10 gap-y-10 text-center justify-items-center mx-auto bg-slate-950 border-l-4 border-r-4 border-b-4 border-slate-900 rounded-b-xl p-8 shadow-inner overflow-hidden">
+            <div className="grid grid-cols-3 max-w-6xl sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-4 xl:grid-cols-5 gap-x-10 gap-y-10 text-center justify-items-center mx-auto bg-slate-950 border-l-4 border-r-4 border-b-4 border-slate-900 rounded-b-xl p-8 shadow-inner overflow-hidden">
               <div className="flex flex-col items-center text-center ">
                 <i className="fa-brands fa-js text-5xl lg:text-6xl text-yellow-500">
                   <IoLogoJavascript size="3rem" />
@@ -184,11 +184,11 @@ export default class Home extends React.Component {
             </div>
           </div>
 
-          <div className="hidden lg:block lg:w-[40%] h-svh relative bg-black">
+          <div className="hidden min-[2000px]:block lg:w-[40%] h-full relative bg-black">
             <img
               src={profileImgUrl}
               alt="Ruben Vallejo"
-              className="absolute top-0 left-0 w-full h-full object-cover object-top"
+              className="relative top-0 left-0 w-full h-full min-h-full object-cover object-top"
             />
           </div>
         </section>
